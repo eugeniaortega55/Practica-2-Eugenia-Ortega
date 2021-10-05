@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora by Eugenia Ortega</title>
+  <meta charset="utf-8">
+  <link href="calculadora.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="EjercicioCalculadoraFunciones.js">
+  </script>
+
+</head>
+<body>
+  <h1>Calculadora de Core</h1>
+ <h2>Número:</h2>
+ <input type="text" id="input">
+
+  <!--  Operaciones   -->
+  <div>
+    <h2>Resultado:</h2>
+    <p style = "color:aliceblue" id= "resultado"> </p> 
+    <p style = "color:aquamarine" id = "total"></p>   
+  </div>
+  
+  <div>
+    <h3>Operaciones Unitarias</h3>
+    <button id="Cuadrado" onclick="cuadrado()">x<sup>2</sup></button>
+    <button id= "Al Cubo" onclick="al_cubo()" >x<sup>3</sup></button>
+    <button id="Modulo" onclick="modulo()">Mod</button>
+    <button id="Factorial" onclick="factorial()">n!</button>
+  </div>
+  
+
+  <div>
+    <h3>Operaciones Binarias </h3>
+    <button id="Suma" onclick="add()">+</button>
+    <button id="Multiplicación" onclick="mul()">*</button>
+    <button id="Resta" onclick="resta()">-</button>
+    <button id="Dividir" onclick="dividir()">/</button>
+    <button id="Igual" onclick="eq()">=</button>
+  </div>
+
+  
+  <div>
+    <h3>Operaciones en Formato CSV</h3>
+    <button id="Sumatorio" onclick="sumatorio()">Σx</button>
+    <button id="Ordenar" onclick="ordenar()">Ordenar</button>
+    <button id="Revertir" onclick="revertir()">Revertir</button>
+    <button id="Quitar" onclick="quitar()">Quitar</button>
+  </div>
+
+</body>
+</html>
